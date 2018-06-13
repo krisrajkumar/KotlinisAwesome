@@ -1,3 +1,4 @@
+
 /**
  * Created by Rajkumar B on 13-06-2018.
  */
@@ -7,5 +8,9 @@ fun main(args: Array<String>) {
     println("Last Element "+theMutableList.last())
     println("Filtered Element "+theMutableList.filter { it.contains("w") })
     println("Fourth Element "+theMutableList.find { it.length == 4 })
-//    println(theMutableList.sort())
+    theMutableList.sort()
+    println("The sorted values")
+    for(item in theMutableList){
+        println(item)
+    }
 }
